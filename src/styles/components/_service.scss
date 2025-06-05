@@ -1,0 +1,45 @@
+.service-card {
+    border: 2px solid $primary-color;
+    min-height: 100%;
+    padding: 3.5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__title {
+        font-size: $font-size-lg;
+        @extend .font-black;
+    }
+
+    &__body {
+        font-size: $font-size-base;
+        color: $dark-color;
+    }
+
+    i {
+        font-size: $font-size-5xl;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        transition: $transition-3;
+        opacity: 0;
+    }
+
+    &:hover {
+        background-color: $dark-color;
+        color: $white-color;
+        border-color: transparent;
+
+        .service-card__title,
+        .service-card__body {
+            color: $white-color;
+            opacity: 50%;
+        }
+
+        i {
+            right: 0;
+            top: 0;
+            opacity: 1;
+        }
+    }
+}

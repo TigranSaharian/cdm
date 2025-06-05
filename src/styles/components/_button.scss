@@ -1,0 +1,89 @@
+.btn-cdm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    cursor: pointer;
+    font-size: $font-size-lg;
+    position: relative;
+
+    span {
+        width: 100%;
+        padding: 0.5rem 2rem;
+        text-transform: uppercase;
+        @extend .font-medium;
+        letter-spacing: 1.5px;
+    }
+
+    i {
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+        font-size: $font-size-4xl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition-3;
+
+        &::before {
+            display: none;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        &:hover {
+            i {
+                width: 3em;
+                opacity: 1;
+
+                &::before {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.85px) {
+        i {
+            width: 3em;
+            opacity: 1;
+
+            &::before {
+                display: block;
+            }
+        }
+    }
+}
+
+.btn-cdm-primary {
+    border: none;
+    background-color: $primary-color;
+
+    span {
+        color: $white-color;
+    }
+
+    i {
+        background-color: $dark-color;
+        color: $white-color;
+    }
+}
+
+.btn-cdm-outline-primary {
+    border: 2px solid $primary-color;
+    background-color: transparent;
+
+    span {
+        color: $primary-color;
+        @extend .font-semi-bold;
+    }
+
+    i {
+
+        background-color: $primary-color;
+        color: $white-color;
+    }
+}

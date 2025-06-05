@@ -1,0 +1,50 @@
+/*#region fonts*/
+.font-default {
+    font-family: $font-famely  !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-default-itralic {
+    font-family: $font-famely  !important;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.font-black {
+    font-family: $font-famely  !important;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-bold {
+    font-family: $font-famely  !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-semi-bold {
+    font-family: $font-famely  !important;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-medium {
+    font-family: $font-famely  !important;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-light {
+    font-family: $font-famely  !important;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-light-italic {
+    font-family: $font-famely  !important;
+    font-weight: 300;
+    font-style: italic
+}
+
+/*#endregion*/

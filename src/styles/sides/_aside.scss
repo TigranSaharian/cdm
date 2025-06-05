@@ -1,0 +1,48 @@
+aside {
+    display: flex;
+    min-height: 25rem;
+
+    .email-aside,
+    .address-aside {
+        width: 100%;
+        padding: 4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        h4 {
+            @extend .font-black;
+            font-size: $font-size-4xl;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+            @extend .font-black;
+            font-size: $font-size-2xl;
+        }
+    }
+
+    .email-aside {
+        &__value {
+            color: $dark-color;
+        }
+    }
+
+    .address-aside {
+        &__title {
+            color: $white-color;
+        }
+
+        &__value {
+            color: $white-color;
+        }
+    }
+
+}

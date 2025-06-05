@@ -1,0 +1,69 @@
+footer {
+    background-color: $dark-color;
+    padding: 6.25rem 0;
+
+    .footer-header {
+        h4 {
+            @extend .font-black;
+            font-size: $font-size-4xl;
+            color: $white-color;
+            text-transform: uppercase;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        p {
+            color: $white-color;
+        }
+    }
+
+    .contact-info-wrapper {
+        .contact-info {
+            margin: 1rem 0;
+
+            &__label {
+                color: $primary-color;
+                size: $font-size-xl;
+                display: block;
+                text-transform: uppercase;
+            }
+
+            &__value {
+                color: $white-color;
+                text-decoration: none;
+                font-size: $font-size-2xl;
+                @extend .font-black;
+            }
+        }
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+
+        &__item {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-right: 2rem;
+            color: $white-color;
+            font-size: $font-size-md;
+            opacity: .75;
+            @extend .font-medium;
+        }
+    }
+
+    form {
+
+        input,
+        textarea {
+            background-color: $dark-color  !important;
+            border: none !important;
+            border-bottom: 2px solid $white-color  !important;
+            border-radius: 0 !important;
+            color: $white-color  !important;
+        }
+    }
+}

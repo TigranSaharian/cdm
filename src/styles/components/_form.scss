@@ -1,0 +1,10 @@
+form {
+
+    input,
+    textarea {
+        background-color: $dark-color  !important;
+        border: none !important;
+        border-bottom: 2px solid $white-color  !important;
+        border-radius: 0 !important;
+    }
+}

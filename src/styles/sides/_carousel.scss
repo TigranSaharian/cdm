@@ -1,0 +1,29 @@
+.carousel {
+    text-align: center;
+
+    .carousel-item {
+        color: $dark-color;
+        min-height: 16rem;
+
+        @media (min-width: 992px) {
+            min-height: 12rem;
+        }
+
+        h5 {
+            margin: 0 auto;
+            @extend .font-black;
+            text-transform: uppercase;
+            max-width: 75%;
+        }
+
+        p {
+            margin: 1.5rem 0;
+        }
+    }
+
+    .carousel-indicators {
+        button {
+            background-color: $primary-color;
+        }
+    }
+}

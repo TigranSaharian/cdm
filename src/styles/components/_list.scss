@@ -1,0 +1,39 @@
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.service-list {
+    &__item {
+        margin: 5px 0;
+        overflow: hidden;
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: 2px 0;
+            text-decoration: none;
+            color: $dark-color;
+            @extend .font-black;
+            opacity: 50%;
+            text-transform: uppercase;
+            position: relative;
+            width: fit-content;
+            transition: $transition-3;
+
+            i {
+                position: absolute;
+                font-size: $font-size-xl;
+                left: -1.75rem;
+            }
+
+            @media (min-width: 768px) {
+                &:hover {
+                    color: $primary-color;
+                    margin-left: 1.75rem;
+                }
+            }
+        }
+
+    }
+}

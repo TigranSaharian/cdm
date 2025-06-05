@@ -1,0 +1,37 @@
+$primary-color: #15BFCE;
+$dark-color: #232931;
+$light-color: #EEEEEE;
+$text-color: #a0a2a6;
+$gray-color: #C5C7C8;
+$white-color: #FFFFFF;
+$black-color: #000000;
+
+$success-color: #0e962b;
+$danger-color: #cb2d3e;
+$warning-color: #ffcc00;
+$info-color: #63c0df;
+
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-md: 1.125rem; // 18px
+$font-size-lg: 1.25rem; // 20px
+$font-size-xl: 1.5rem; // 24px
+$font-size-2xl: 1.875rem; // 30px
+$font-size-3xl: 2.25rem; // 36px
+$font-size-4xl: 3rem; // 48px
+$font-size-5xl: 3.75rem; // 60px
+$font-size-6xl: 4.5rem; // 72px
+$font-size-7xl: 7.5rem; // 120px
+
+$font-systrem: "Montserrat";
+$font-famely: $font-systrem,
+    sans-serif;
+
+
+$transition-3: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+$transition-5: 0.5s;
+
+$duration-20: .2s;
+$duration-30: .3s;
+$duration-50: .5s;

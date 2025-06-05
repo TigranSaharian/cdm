@@ -1,0 +1,41 @@
+.numeric-card {
+    padding: 1em;
+
+    &__header {
+        display: flex;
+        align-items: end;
+    }
+
+    &__number {
+        font-size: $font-size-6xl;
+        color: $dark-color;
+        position: relative;
+        margin-left: 15px;
+        @extend .font-black;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-20px, 45px);
+            width: 1em;
+            height: .5em;
+            z-index: -1;
+            @extend .background-primary;
+        }
+    }
+
+    &__title {
+        font-size: $font-size-xl;
+        margin-left: 25px;
+        @extend .font-black;
+        text-transform: uppercase;
+    }
+
+    &__body {
+        p {
+            text-align: justify;
+        }
+    }
+}
