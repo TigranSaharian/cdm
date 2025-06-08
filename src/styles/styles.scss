@@ -21,27 +21,3 @@ section {
         font-size: $font-size-sm;
     }
 }
-
-.bottom-panel-container {
-    background-color: #1E1E1E;
-    color: $white-color;
-    padding: 1rem;
-
-    .bottom-panel-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &__date,
-        &__link {
-            opacity: 0.5;
-        }
-
-        &__link {
-            text-decoration: none;
-            color: $white-color;
-            padding: 0.75rem .5rem;
-        }
-    }
-
-}

@@ -31,7 +31,11 @@
         transition: 0.3s;
         z-index: 2;
         width: 100%;
-        transform: translateY(0); // Default state for small screens
+
+
+        @media (max-width: 767.85px) {
+            transform: translateY(-100%); // Default state for small screens
+        }
 
         h4,
         span {
@@ -40,7 +44,7 @@
         }
 
         h4 {
-            font-size: $font-size-lg;
+            font-size: $font-size-base;
             text-transform: uppercase;
             @extend .font-black;
         }

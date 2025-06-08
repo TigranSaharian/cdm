@@ -1,6 +1,6 @@
 footer {
     background-color: $dark-color;
-    padding: 6.25rem 0;
+    padding-top: 6.25rem;
 
     .footer-header {
         h4 {
@@ -65,5 +65,30 @@ footer {
             border-radius: 0 !important;
             color: $white-color  !important;
         }
+    }
+
+    .bottom-panel-container {
+        margin-top: 4rem;
+        background-color: #1E1E1E;
+        color: $white-color;
+        padding: 1rem;
+
+        .bottom-panel-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__date,
+            &__link {
+                opacity: 0.5;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: $white-color;
+                padding: 0.75rem .5rem;
+            }
+        }
+
     }
 }
