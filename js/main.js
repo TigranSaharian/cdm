@@ -1,6 +1,6 @@
-const serviceFooter = '/footer.html'
-const serviceHeader = '/header.html'
-const serviceServices = '/services.html'
+const serviceFooter = './footer.html'
+const serviceHeader = './header.html'
+const serviceServices = './services.html'
 
 jQuery(document).ready(function ($) {
 
@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 });
 
 
-fetch(serviceHeader ?? "/header.html")
+fetch(serviceHeader ?? "./header.html")
     .then((response) => {
         return response.text();
     })
@@ -25,7 +25,7 @@ fetch(serviceHeader ?? "/header.html")
     .catch((err) => {
         console.log(err.message);
     });
-fetch(serviceFooter ?? "/footer.html")
+fetch(serviceFooter ?? "./footer.html")
     .then((response) => {
         return response.text();
     })
@@ -36,7 +36,7 @@ fetch(serviceFooter ?? "/footer.html")
         console.log(err.message);
     });
 
-fetch(serviceServices ?? "/services.html")
+fetch(serviceServices ?? "./services.html")
     .then((response) => {
         return response.text();
     })
