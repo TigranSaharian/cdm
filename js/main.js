@@ -1,7 +1,7 @@
 const serviceFooter = '../footer.html'
 const serviceHeader = '../header.html'
 const serviceServices = '../services.html'
-const production = true;
+const production = false;
 
 jQuery(document).ready(function ($) {
 
