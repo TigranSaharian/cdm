@@ -1,10 +1,9 @@
 const base = location.origin;
-
-const footer = `${base}/footer.html`
-const header = `${base}/header.html`
-const services = `${base}/services.html`
-
 const production = true;
+
+const footer = production ? `${base}/cdm/footer.html` : `${base}/footer.html`
+const header = production ? `${base}/cdm/header.html` : `${base}/header.html`
+const services = production ? `${base}/cdm/services.html` : `${base}/services.html`
 
 jQuery(document).ready(function ($) {
 
