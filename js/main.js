@@ -1,5 +1,5 @@
 const base = location.origin;
-const production = true;
+const production = false;
 
 const footer = production ? `${base}/cdm/footer.html` : `${base}/footer.html`
 const header = production ? `${base}/cdm/header.html` : `${base}/header.html`
