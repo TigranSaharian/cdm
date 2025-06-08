@@ -1,9 +1,10 @@
-const serviceFooter = '../footer.html'
-const serviceHeader = '../header.html'
-const serviceServices = '../services.html'
-const production = true;
+const base = location.origin;
 
-console.log(serviceFooter);
+const footer = `${base}/footer.html`
+const header = `${base}/header.html`
+const services = `${base}/services.html`
+
+const production = true;
 
 jQuery(document).ready(function ($) {
 
@@ -18,7 +19,7 @@ jQuery(document).ready(function ($) {
 });
 
 
-fetch(serviceHeader ?? "./header.html")
+fetch(header)
     .then((response) => {
         return response.text();
     })
@@ -28,7 +29,7 @@ fetch(serviceHeader ?? "./header.html")
     .catch((err) => {
         console.log(err.message);
     });
-fetch(serviceFooter ?? "./footer.html")
+fetch(footer)
     .then((response) => {
         return response.text();
     })
@@ -39,7 +40,7 @@ fetch(serviceFooter ?? "./footer.html")
         console.log(err.message);
     });
 
-fetch(serviceServices ?? "./services.html")
+fetch(services)
     .then((response) => {
         return response.text();
     })
@@ -53,7 +54,6 @@ fetch(serviceServices ?? "./services.html")
 const method = (element) => {
     const pagename = element.dataset.page;
     if (pagename) {
-        const base = location.origin; // e.g., http://localhost:5500
         if (production) {
             window.location.href = `${base}/cdm/services/${pagename}.html`;
         } else {
