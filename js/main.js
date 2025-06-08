@@ -1,6 +1,6 @@
-const serviceFooter = '/src/footer.html'
-const serviceHeader = '/src/header.html'
-const serviceServices = '/src/services.html'
+const serviceFooter = '/footer.html'
+const serviceHeader = '/header.html'
+const serviceServices = '/services.html'
 
 jQuery(document).ready(function ($) {
 
@@ -52,8 +52,8 @@ const method = (element) => {
     if (pagename) {
         const base = location.origin; // e.g., http://localhost:5500
         console.log(base);
-        window.location.href = `${base}/src/services/${pagename}.html`;
-        console.log(`Navigating to: ${base}/src/services/${pagename}.html`);
+        window.location.href = `${base}/services/${pagename}.html`;
+        console.log(`Navigating to: ${base}/services/${pagename}.html`);
     } else {
         console.warn('No data-page attribute found on element.');
     }
