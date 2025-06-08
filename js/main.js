@@ -1,6 +1,7 @@
 const serviceFooter = './footer.html'
 const serviceHeader = './header.html'
 const serviceServices = './services.html'
+const production = true;
 
 jQuery(document).ready(function ($) {
 
@@ -51,9 +52,11 @@ const method = (element) => {
     const pagename = element.dataset.page;
     if (pagename) {
         const base = location.origin; // e.g., http://localhost:5500
-        console.log(base);
-        window.location.href = `${base}/services/${pagename}.html`;
-        console.log(`Navigating to: ${base}/services/${pagename}.html`);
+        if (production) {
+            window.location.href = `${base}/cdm/services/${pagename}.html`;
+        } else {
+            window.location.href = `${base}/services/${pagename}.html`;
+        }
     } else {
         console.warn('No data-page attribute found on element.');
     }
