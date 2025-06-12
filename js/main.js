@@ -1,5 +1,5 @@
 const base = location.origin;
-const production = true;
+const production = false;
 
 const footer = production ? `${base}/cdm/footer.html` : `${base}/footer.html`
 const header = production ? `${base}/cdm/header.html` : `${base}/header.html`
@@ -62,3 +62,9 @@ const method = (element) => {
         console.warn('No data-page attribute found on element.');
     }
 };
+
+const toggleMenu = (element) => {
+    element.classList.toggle('active');
+    const menu = document.querySelector(".navbar-menu");
+    menu.classList.toggle('active');
+}

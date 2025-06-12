@@ -11,6 +11,7 @@
         color: $dark-color;
         position: relative;
         margin-left: 15px;
+        z-index: 1;
         @extend .font-black;
 
         &::after {
