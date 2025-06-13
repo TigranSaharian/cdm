@@ -66,11 +66,17 @@
 
     &__body {
 
-        margin-top: 10rem;
         margin-right: 2rem;
         max-width: 75%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
 
         @media (min-width: 992px) {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             max-width: 50%;
             margin: auto;
         }
@@ -83,7 +89,7 @@
             color: $white-color;
             @extend .font-black;
             text-transform: uppercase;
-            font-size: $font-size-3xl;
+            font-size: $font-size-4xl;
 
             span {
                 color: $primary-color;
@@ -94,7 +100,7 @@
             }
 
             @media (max-width: 768px) {
-                font-size: $font-size-2xl;
+                font-size: $font-size-3xl;
             }
         }
     }
@@ -102,6 +108,7 @@
     &__logo {
         // position: absolute;
         // top: 4rem;
+        width: fit-content;
 
         img {
             width: 100px;
@@ -195,6 +202,12 @@
 
                 &:nth-child(3) {
                     transform: rotate(-45deg) translateY(-10px) translateX(10px);
+                }
+
+                @media (max-width: 576px) {
+                    &:nth-child(3) {
+                        transform: rotate(-45deg) translateY(-8px) translateX(8px);
+                    }
                 }
             }
 
