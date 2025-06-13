@@ -29,11 +29,11 @@
 
 .filter-gallery {
     padding-top: 2.25rem;
-
+    width: calc(100vw - 15px);
 
     &__item {
         position: relative;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
 
         &:hover {

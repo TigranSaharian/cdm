@@ -1,5 +1,5 @@
 const base = location.origin;
-const production = true;
+const production = false;
 
 const footer = production ? `${base}/cdm/footer.html` : `${base}/footer.html`
 const header = production ? `${base}/cdm/header.html` : `${base}/header.html`
@@ -16,6 +16,29 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+const prepareHeaderBody = () => {
+    const headerBody = document.querySelector('.header__body');
+    if (!headerBody) return;
+
+    const urlParts = window.location.pathname.split('/');
+    const currentPage = urlParts[urlParts.length - 1] || 'index.html';
+
+    const content = headerContent.find(x => x.page === currentPage);
+    console.log(currentPage);
+    if (content) {
+        headerBody.innerHTML = `
+            ${content.title}
+            ${content.text}
+        `;
+    } else {
+        console.warn(`No header content found for page: ${currentPage}`);
+    }
+};
+
+setTimeout(() => {
+    prepareHeaderBody();
+}, 500);
 
 
 fetch(header)

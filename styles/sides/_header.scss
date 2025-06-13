@@ -7,7 +7,7 @@
         position: relative;
 
         @media (min-width: 992px) {
-            padding: 4rem;
+            padding: 2rem;
         }
     }
 
@@ -22,8 +22,8 @@
         }
 
         @media (min-width: 992px) {
-            right: 4rem;
-            top: 4rem;
+            right: 2rem;
+            top: 2rem;
         }
     }
 
@@ -39,7 +39,7 @@
         }
 
         @media (min-width: 992px) {
-            right: 4rem;
+            right: 2rem;
         }
     }
 
@@ -153,8 +153,8 @@
         }
 
         @media (min-width: 992px) {
-            right: 4rem;
-            bottom: 4rem;
+            right: 2rem;
+            bottom: 2rem;
         }
 
     }
@@ -162,10 +162,11 @@
     &__burger {
         position: absolute;
         top: 50%;
-        left: 4rem;
+        left: 2rem;
         transform: translateY(-50%);
         cursor: pointer;
         transition: .3s;
+        z-index: 1;
 
         span {
             height: 5px;
@@ -291,6 +292,7 @@
             @extend .font-black;
             padding: 0.25rem 0;
             line-height: 1;
+            display: block;
 
             @media (min-width: 992px) {
                 &:hover {
