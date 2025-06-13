@@ -135,7 +135,7 @@
   font-style: italic;
 }
 
-.font-black, .filter-gallery__info-title, .filter-wrapper ul li a, .navbar-info__value, .navbar-menu__item a, .header__body h1, aside .email-aside a,
+.font-black, .filter-gallery__info-title, .filter-wrapper ul li, .navbar-info__value, .navbar-menu__item a, .header__body h1, aside .email-aside a,
 aside .address-aside a, aside .email-aside h4,
 aside .address-aside h4, footer .contact-info-wrapper .contact-info__value, footer .footer-header h4, .carousel .carousel-item h5, .team-member__hover h4, h2, .service-card__title, .service-list__item a, .info-square__title, .info-square__number, .numeric-card__number, .numeric-card__title {
   font-family: "Montserrat", sans-serif !important;
@@ -1122,23 +1122,20 @@ aside .address-aside__value {
       flex-wrap: wrap;
 }
 .filter-wrapper ul li {
-  margin: 0.5rem 0;
-}
-.filter-wrapper ul li a {
   margin: 0 0.5rem;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   text-transform: uppercase;
   color: #232931;
   opacity: 0.5;
-  text-decoration: none;
+  cursor: pointer;
 }
-.filter-wrapper ul li.active a {
+.filter-wrapper ul li.active {
   color: #15BFCE;
   opacity: 1;
 }
 
 .filter-gallery {
-  padding-top: 6.25rem;
+  padding-top: 2.25rem;
 }
 .filter-gallery__item {
   position: relative;

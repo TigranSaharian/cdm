@@ -8,31 +8,27 @@
         flex-wrap: wrap;
 
         li {
-            margin: 0.5rem 0;
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            text-transform: uppercase;
+            @extend .font-black;
+            color: $dark-color;
+            opacity: 0.5;
+            cursor: pointer;
+            // a {
 
-            a {
-                margin: 0 0.5rem;
-                padding: 1rem 0.5rem;
-                text-transform: uppercase;
-                @extend .font-black;
-                color: $dark-color;
-                opacity: 0.5;
-                text-decoration: none;
-
-            }
+            // }
 
             &.active {
-                a {
-                    color: $primary-color;
-                    opacity: 1;
-                }
+                color: $primary-color;
+                opacity: 1;
             }
         }
     }
 }
 
 .filter-gallery {
-    padding-top: 6.25rem;
+    padding-top: 2.25rem;
 
 
     &__item {
