@@ -1,5 +1,12 @@
 var headerContent = [
     {
+        page: `index.html`,
+        title: `<h1><span>Smart</span>, user-first
+                solutions that <span>work flawlessly.</span></h1>`,
+        text: `<p>Welcome to CDM, where your vision becomes reality. We excel in building distinctive brands,
+                engaging advertising campaigns, and powerful digital strategies.</p>`
+    },
+    {
         page: `about.html`,
         title: `<h1>Innovating <span>Digital Solutions</span>
                 with Passion
