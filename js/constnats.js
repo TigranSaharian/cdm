@@ -35,7 +35,103 @@ var headerContent = [
                 and creative solutions tailored to bring ideas to life.</p>`
     },
     {
-        page: `portfolio.html`,
+        page: `web-mobile-development.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `marketing-branding.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `web-design.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `telegram-bots.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `telegram-mini-apps.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `artificial-intelligance.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `copywriting.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `presentations.html`,
+        title: `<h1>Comprehensive
+                <span>Services</span> to Bring Your
+                Vision <span>to Life</span></h1>`,
+        text: `<p>At CDM Nexus, we offer a wide range of services tailored to meet your unique needs.
+                From web development and mobile applications to Telegram bots, web design,
+                and branding, our team of experts combines creativity with cutting-edge technology
+                to deliver innovative solutions. Whether you're a startup, small business,
+                or established enterprise, we're here to transform your ideas into reality with precision,
+                efficiency, and exceptional quality.</p>`
+    },
+    {
+        page: `graphic-design.html`,
         title: `<h1>Comprehensive
                 <span>Services</span> to Bring Your
                 Vision <span>to Life</span></h1>`,

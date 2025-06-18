@@ -24,7 +24,7 @@ const prepareHeaderBody = () => {
     const urlParts = window.location.pathname.split('/');
     const currentPage = urlParts[urlParts.length - 1] || 'index.html';
 
-    const content = headerContent.find(x => x.page === currentPage);
+    const content = headerContent.find(x => x.page.includes(currentPage));
     console.log(currentPage);
     if (content) {
         headerBody.innerHTML = `
@@ -86,8 +86,37 @@ const method = (element) => {
     }
 };
 
+const getFlag = () => {
+    const headerLogo = document.getElementById('flag');
+    headerLogo.setAttribute('src', `${window.location.origin}/assets/RU.svg`);
+}
+
+const getHeaderLogo = () => {
+    const headerLogo = document.querySelectorAll('.header__logo-image');
+    headerLogo.forEach(x => {
+        x.setAttribute('src', `${window.location.origin}/assets/header-logo.svg`);
+    });
+}
+
+const getFooterLogo = () => {
+    const headerLogo = document.getElementById('footer-logo');
+    headerLogo.setAttribute('src', `${window.location.origin}/assets/small-logo.svg`);
+}
+
+const getCircalImage = () => {
+    const headerLogo = document.getElementById('circal-text');
+    headerLogo.setAttribute('src', `${window.location.origin}/assets/circal-text.svg`);
+}
+
 const toggleMenu = (element) => {
     element.classList.toggle('active');
     const menu = document.querySelector(".navbar-menu");
     menu.classList.toggle('active');
 }
+
+setTimeout(() => {
+    getFlag();
+    getHeaderLogo();
+    getFooterLogo();
+    getCircalImage();
+}, 500);  
