@@ -86,6 +86,10 @@ const method = (element) => {
     }
 };
 
+const goHome = () => {
+    window.location.href = `${window.location.origin}${production ? '/cdm' : ''}/index.html`;
+};
+
 const getFlag = () => {
     const headerLogo = document.getElementById('flag');
     headerLogo.setAttribute('src', `${window.location.origin}${production ? '/cdm' : ''}/assets/RU.svg`);
