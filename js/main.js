@@ -88,24 +88,24 @@ const method = (element) => {
 
 const getFlag = () => {
     const headerLogo = document.getElementById('flag');
-    headerLogo.setAttribute('src', `${window.location.origin}/assets/RU.svg`);
+    headerLogo.setAttribute('src', `${window.location.origin}${production ? '/cdm' : ''}/assets/RU.svg`);
 }
 
 const getHeaderLogo = () => {
     const headerLogo = document.querySelectorAll('.header__logo-image');
     headerLogo.forEach(x => {
-        x.setAttribute('src', `${window.location.origin}/assets/header-logo.svg`);
+        x.setAttribute('src', `${window.location.origin}${production ? '/cdm' : ''}/assets/header-logo.svg`);
     });
 }
 
 const getFooterLogo = () => {
     const headerLogo = document.getElementById('footer-logo');
-    headerLogo.setAttribute('src', `${window.location.origin}/assets/small-logo.svg`);
+    headerLogo.setAttribute('src', `${window.location.origin}${production ? '/cdm' : ''}/assets/small-logo.svg`);
 }
 
 const getCircalImage = () => {
     const headerLogo = document.getElementById('circal-text');
-    headerLogo.setAttribute('src', `${window.location.origin}/assets/circal-text.svg`);
+    headerLogo.setAttribute('src', `${window.location.origin}${production ? '/cdm' : ''}/assets/circal-text.svg`);
 }
 
 const toggleMenu = (element) => {
