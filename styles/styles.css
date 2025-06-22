@@ -666,7 +666,6 @@ footer .contact-info-wrapper .contact-info__label {
   color: #15BFCE;
   size: 1.5rem;
   display: block;
-  text-transform: uppercase;
 }
 footer .contact-info-wrapper .contact-info__value {
   color: #FFFFFF;
@@ -714,6 +713,9 @@ footer .bottom-panel-container .bottom-panel-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 footer .bottom-panel-container .bottom-panel-wrapper__date, footer .bottom-panel-container .bottom-panel-wrapper__link {
   opacity: 0.5;

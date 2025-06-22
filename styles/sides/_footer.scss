@@ -27,7 +27,6 @@ footer {
                 color: $primary-color;
                 size: $font-size-xl;
                 display: block;
-                text-transform: uppercase;
             }
 
             &__value {
@@ -77,6 +76,8 @@ footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
 
             &__date,
             &__link {
